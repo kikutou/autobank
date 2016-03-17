@@ -3,6 +3,7 @@
 
 import os
 from  pyinotify import  WatchManager, Notifier, ProcessEvent,IN_DELETE, IN_CREATE,IN_MODIFY
+import readmail
 
 class EventHandler(ProcessEvent):
     def process_IN_CREATE(self, event):
@@ -12,6 +13,7 @@ class EventHandler(ProcessEvent):
         print   "Delete file: %s "  %   os.path.join(event.path,event.name)
 
     def process_IN_MODIFY(self, event):
+        readmail.checkEmail('/home/kiku/.thunderbird/xe9nddv0.default/Mail/mail.mamol.co.jp/入金確認')
         print   "Modify file: %s "  %   os.path.join(event.path,event.name)
 
 def FSMonitor(path='/var/log'):

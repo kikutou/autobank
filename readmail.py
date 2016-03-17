@@ -3,7 +3,7 @@
 #CreateDate : 2016-03-17
 import re
 import time
-import sqlite3
+import mailDbController
 
 def checkEmail(path = '/home/kiku/.thunderbird/kx3gfqlm.default/ImapMail/mail.mamol.co.jp/INBOX.sbd/&UWWR0Xi6io0-'):
 
@@ -18,9 +18,6 @@ def checkEmail(path = '/home/kiku/.thunderbird/kx3gfqlm.default/ImapMail/mail.ma
         自分のフォルダのフルパス
     '''
 
-    con = sqlite3.connect('autobank.db')
-    curs = con.cursor()
-
     datePattern = re.compile('Date: .*');
     messageIdPattern = re.compile('Message-ID: <.*>')
     subjectPattern = re.compile('Subject: =.*')
@@ -29,9 +26,14 @@ def checkEmail(path = '/home/kiku/.thunderbird/kx3gfqlm.default/ImapMail/mail.ma
 
     fin = open(path)
     while True:
-        #まず、日付を取る
+
         line = fin.readline()
+
+        if not line:
+            break
+
         if datePattern.match(line):
+            #まず、日付を取る
             date = line.split('Date: ')[1].strip()
 
             dateTime = time.strptime(date,"%a, %d %b %Y %H:%M:%S +0900")
@@ -51,21 +53,9 @@ def checkEmail(path = '/home/kiku/.thunderbird/kx3gfqlm.default/ImapMail/mail.ma
                     if(fromPattern.match(line)):
                         sentMan = line.split('From: =?UTF-8?B?6Z6g6aiw?= ')[1].strip()[1:-1]
 
-                        print messageId
-
                         #DBの処理をいれましょう
-                        ins = 'insert into RECEIVE_MAIL VALUES(?,?,?)'
-                        curs.execute(ins,(messageId,dateTime,0))
+                        mailDbController.createNewMailInfo(messageId,dateTime,0)
 
-
-
-                        print dateTime
-                        print messageId
-                        print len(messageId)
-                        print subject
-                        print sentMan
-                        print '*************************'
-                        continue
 
                     else:
                         print 'some problems from sentman'
@@ -80,6 +70,11 @@ def checkEmail(path = '/home/kiku/.thunderbird/kx3gfqlm.default/ImapMail/mail.ma
                 print 'error'
                 continue
 
+    fin.close()
+
 
 if __name__ == '__main__':
-    checkEmail()
+
+    while True:
+        checkEmail('/home/kiku/.thunderbird/xe9nddv0.default/Mail/mail.mamol.co.jp/入金確認')
+        time.sleep(10)

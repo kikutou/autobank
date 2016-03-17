@@ -1,0 +1,932 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0115)https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851 -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="1 Sep 2000 00:00:00 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<title>ゆうちょダイレクト | 電信振替</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="./ゆうちょダイレクト _ 電信振替_files/dgCAbase.css" rel="stylesheet" type="text/css" media="all">
+<script src="./ゆうちょダイレクト _ 電信振替_files/jquery.js" type="text/javascript" id="jqueryjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 電信振替_files/mjl.js" type="text/javascript" id="mjljs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 電信振替_files/run.js" type="text/javascript" id="runjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 電信振替_files/dgcaU0804.js" type="text/javascript" id="dgcaU0804js" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 電信振替_files/dgbaRequestController.js" language="JavaScript" type="text/JavaScript" id="dgbaRequestControllerjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="https://cache.jp-bank.japanpost.jp/pages/pc/etc/js/selectivizr.js" type="text/javascript" id="selectivizrjs" context-root="https://cache.jp-bank.japanpost.jp"></SCRIPT>
+<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://cache.jp-bank.japanpost.jp/pages/pc/etc/css/dgCAIE8filter.css" rel="stylesheet" type="text/css">
+<![endif]-->
+</head>
+
+<body>
+
+    <form name="submitData" method="post" autocomplete="off" onsubmit="javascript:return false;"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="61d8942f73284cc2fd99366bc726cc97b0556e8e"></div><div><input type="hidden" name="event" value=""></div>
+        <div id="wrapper">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="header">
+	<p id="headerLogo01">
+	    <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/index.html&#39;, &#39;FA0008&#39;);"><img src="./ゆうちょダイレクト _ 電信振替_files/DFCAheaderLogo01.gif" width="291" height="60" alt="ゆうちょ銀行"></a>
+	</p>
+	<p id="headerLinkHome">
+	    
+        
+        
+        
+            
+            
+	            
+	            
+	                
+	                    
+	                        
+	                        <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="jsModalLink" data-modal="HEADER_HOME0">ホームへ</a><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U270201BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">ホームへ</a>
+	                    
+	                    
+	                
+	                
+	            
+            
+        
+	</p>
+	<p id="headerLogo02">
+	    <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/dr_pc_index.html&#39;, &#39;FA0009&#39;);"><img src="./ゆうちょダイレクト _ 電信振替_files/DFCAheaderLogo02.gif" width="260" height="59" alt="ゆうちょダイレクト"></a>
+	</p>
+	<p id="headerLogout" class="btnTy01">
+        
+        
+            
+                
+                <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="jsModalLink" data-modal="HEADER_LOGOUT_RIYOUTEISHI">利用停止してログアウト（推奨）</a><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U380501BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">利用停止してログアウト（推奨）</a>
+            
+            
+            <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="jsModalLink" data-modal="HEADER_LOGOUT">ログアウト</a><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U040101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">ログアウト</a>
+        
+        
+	</p>
+	</div><!-- /header -->
+
+
+
+            <div id="structure">
+                <div id="strMain">
+                    <h1 class="hdgL1Ba">
+                        <span>ゆうちょ銀行あて振替</span>
+                    </h1>
+                    <!-- SC_GWU08_04-I001 --><!-- /SC_GWU08_04-I001 -->
+                    
+                    <h2 class="hdgL2Ba">
+                        <span>送金内容入力</span>
+                    </h2>
+                    <ol class="listStepBa">
+                        <li class="current"><span>ステップ1</span></li>
+                        <li class="last"><span>ステップ2</span></li>
+                        <li class="finish"><span>ステップ3</span><em>完了</em></li>
+                    </ol>
+                    <!-- SC_GWU08_04-I003 -->
+<p>入力欄に必要項目を入力のうえ、「次へ」を押してください。<br>
+送金を行わずに送金先口座名義人名の表示のみを所定回数以上連続で行うと、送金先口座名義人名の表示が利用できなくなりますのでご注意ください。</p>
+<!-- /SC_GWU08_04-I003 -->
+                    
+                    <h3 class="hdgL3Ba">
+                        <span>料金のご説明</span>
+                    </h3>
+                    
+                        
+                            
+                                
+                                    
+                                        <p>
+                                            <em>平成２８年３月は、あと５回まで無料で送金が行えます。
+                                            </em>
+                                        </p>
+                                    
+                                
+                            
+                        
+                        <!-- SC_GWU08_04-I004 -->
+<div>
+<table class="tblTy03">
+    <colgroup><col class="w20"><col class="w40"><col class="w40"></colgroup>
+    <tbody>
+        <tr>
+            <th>送金料金</th>
+            <td class="alignR">月５回まで無料<br>
+            （６回目以降は１１３円）</td>
+            <td>電信振替の料金</td>
+        </tr>
+        <tr>
+            <th>受入明細票の送付料金</th>
+            <td class="alignR">１００円</td>
+            <td>送金先口座が総合口座（口座の記号番号の１桁目が「１」）の場合で、「送金先口座名義人に対する受入明細票の送付」欄の「送付あり」を選択された場合に限ります。</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<!-- /SC_GWU08_04-I004 -->
+                    
+                    
+                    <!-- SC_GWU08_04-I006 -->
+<p>毎月の無料回数は1日の0時0分頃更新されます。</p>
+<!-- /SC_GWU08_04-I006 -->
+                    <h3 class="hdgL3Ba">
+                        <span>送金元口座選択</span>
+                    </h3>
+                    <!-- SC_GWU08_04-I007 -->
+<p>以下の送金元口座以外の口座から送金する場合は、「送金元口座を変更する」または「送金元口座選択画面に戻る」を押してください。</p>
+<!-- /SC_GWU08_04-I007 -->
+                    <table class="tblTy03">
+                        <colgroup>
+                            <col class="w30">
+                            <col class="w70">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>送金元口座</th>
+                                <td>
+                                    <div class="jsSelect04">
+                                        <ul class="jsSelect04root">
+                                            
+                                                
+                                                    
+                                                        
+                                                            <li style="display: list-item;">総合：10110-75294431
+                                                                <br>（普通：〇一八店&#8195;7529443）
+                                                                <br>(代表)
+                                                            </li>
+                                                        
+                                                    
+                                                
+                                            
+                                        </ul>
+                                        <select name="kouzaTsuuban" id="mailAddressSentakuId" class="selectBa jsSelect04Select" style="display: none;"><option value="1" selected="selected">総合：10110-75294431(代表)</option></select>
+                                        <input type="hidden" name="mailAddressSentakuUmu" value="1" id="mailAddressSentakuUmuId">
+                                        <ul class="jsSelect04MailSentakuUmu" style="display:none;" id="mailSentakuUmuId">
+                                            
+                                                
+                                                    
+                                                        
+                                                            
+                                                            
+                                                            
+                                                                
+                                                                    <li id="mailSentakuUmuListId_01">1</li>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                        
+                                                    
+                                                
+                                            
+                                        </ul>
+                                        <ul class="jsSelect04Price pt10 alignR">
+                                            
+                                                
+                                                    
+                                                        
+                                                            <li style="display: list-item;"><em class="txtLeadBa">現在高：<span class="sum">100,000円</span></em></li>
+                                                        
+                                                    
+                                                
+                                            
+                                        </ul>
+                                        
+                                        
+                                            
+                                                <p class="btnTy05 pt10">
+                                                    <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#">送金元口座を変更する</a>
+                                                </p>
+                                            
+                                        
+                                    </div>
+                                    
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 class="hdgL3Ba">
+                        <span>送金内容を入力</span>
+                    </h3>
+                    <!-- SC_GWU08_04-I011 -->
+<p>画面の案内にしたがって、送金内容を入力してください。</p>
+<!-- /SC_GWU08_04-I011 -->
+                    <table class="tblTy03">
+                        <colgroup>
+                            <col class="w30">
+                            <col class="w70">
+                        </colgroup>
+                        <tbody>
+                            
+                            
+                            
+                            
+                            
+                                <tr class="req">
+                                    <th>送金先口座<span class="icon">必須</span><br>（記号番号）
+                                    </th>
+                                    <td><!-- SC_GWU08_04-I016 -->
+<p>送金先口座の記号番号を入力してください。</p>
+<!-- /SC_GWU08_04-I016 -->
+                                        <p class="i08Condition_2">
+                                            <input type="text" name="soukinSakiKigouBangouKigou" maxlength="6" value="" class="w20">
+                                            -
+                                            <input type="text" name="soukinSakiKigouBangouBangou" maxlength="8" value="" class="w30">
+                                        </p> <!-- SC_GWU08_04-I017 -->
+<ul class="listBa">
+<li>
+送金先口座の入力方法<br>
+例）11520－＊　12345671<br>
+　　04020－＊－123456<br>
+＊の部分に数字があっても入力不要です。
+</li>
+<li>※公金口座（税金、公共料金等）への送金はお取り扱いしておりません。</li>
+<li>※料金受入加入者負担の払込取扱票（赤色）に記載された記号番号を入力した場合、料金は、お客さま負担となります。</li>
+</ul>
+<!-- /SC_GWU08_04-I017 -->
+                                    </td>
+                                </tr>
+                            
+                            <tr class="req">
+                                <th>送金金額<span class="icon">必須</span></th>
+                                <td><!-- SC_GWU08_04-I018 -->
+<p>送金金額を半角数字（「￥」や「，（カンマ）」などの記号の入力は不要です。）で入力してください。</p>
+<!-- /SC_GWU08_04-I018 -->
+                                    <p>
+                                        <input type="text" name="soukinGaku" maxlength="10" value="" class="alignR">円
+                                    </p>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>送金指定日</th>
+                                <td>
+                                    <input type="radio" name="hizukehenkouUmuSentaku" value="0" checked="checked" id="radio03_01" class="toggle off"><label for="radio03_01">送金日を指定しない（即時引き落とし）</label>
+                                    <!-- SC_GWU08_04-I020 -->
+<div class="boxTy01">
+<ul class="listBa">
+    <li>送金金額および送金料金は即時に引き落とします。</li>
+</ul>
+</div>
+<p>送金日を指定する場合は、「送金日を指定する（指定日に引き落とし）」にチェックを入れてください。</p>
+<!-- /SC_GWU08_04-I020 -->
+                                    <input type="radio" name="hizukehenkouUmuSentaku" value="1" id="radio03_02" class="toggle on"><label for="radio03_02">送金日を指定する（指定日に引き落とし）</label>
+                                    <p><select name="soukinShiteiHiTsuuban" class="selectBa toggleState" disabled=""><option value="1">平成28(2016)年 3月17日(木)</option>
+                                        
+                                            <option value="2">平成28(2016)年 3月18日(金)</option>
+                                        
+                                            <option value="3">平成28(2016)年 3月19日(土)</option>
+                                        
+                                            <option value="4">平成28(2016)年 3月20日(日)</option>
+                                        
+                                            <option value="5">平成28(2016)年 3月21日(月)</option>
+                                        
+                                            <option value="6">平成28(2016)年 3月22日(火)</option>
+                                        
+                                            <option value="7">平成28(2016)年 3月23日(水)</option>
+                                        
+                                            <option value="8">平成28(2016)年 3月24日(木)</option>
+                                        
+                                            <option value="9">平成28(2016)年 3月25日(金)</option>
+                                        
+                                            <option value="10">平成28(2016)年 3月26日(土)</option>
+                                        
+                                            <option value="11">平成28(2016)年 3月27日(日)</option>
+                                        
+                                            <option value="12">平成28(2016)年 3月28日(月)</option>
+                                        
+                                            <option value="13">平成28(2016)年 3月29日(火)</option>
+                                        
+                                            <option value="14">平成28(2016)年 3月30日(水)</option>
+                                        
+                                            <option value="15">平成28(2016)年 3月31日(木)</option>
+                                        
+                                            <option value="16">平成28(2016)年 4月 1日(金)</option>
+                                        
+                                            <option value="17">平成28(2016)年 4月 2日(土)</option>
+                                        
+                                            <option value="18">平成28(2016)年 4月 3日(日)</option>
+                                        
+                                            <option value="19">平成28(2016)年 4月 4日(月)</option>
+                                        
+                                            <option value="20">平成28(2016)年 4月 5日(火)</option>
+                                        
+                                            <option value="21">平成28(2016)年 4月 6日(水)</option>
+                                        
+                                            <option value="22">平成28(2016)年 4月 7日(木)</option>
+                                        
+                                            <option value="23">平成28(2016)年 4月 8日(金)</option>
+                                        
+                                            <option value="24">平成28(2016)年 4月 9日(土)</option>
+                                        
+                                            <option value="25">平成28(2016)年 4月10日(日)</option>
+                                        
+                                            <option value="26">平成28(2016)年 4月11日(月)</option>
+                                        
+                                            <option value="27">平成28(2016)年 4月12日(火)</option>
+                                        
+                                            <option value="28">平成28(2016)年 4月13日(水)</option>
+                                        
+                                            <option value="29">平成28(2016)年 4月14日(木)</option>
+                                        
+                                            <option value="30">平成28(2016)年 4月15日(金)</option>
+                                        
+                                            <option value="31">平成28(2016)年 4月16日(土)</option></select></p>
+                                    <!-- SC_GWU08_04-I021 -->
+<div class="boxTy01">
+<ul class="listBa">
+    <li>送金日は、31日先まで指定できます。</li>
+    <li>送金は送金指定日の9時から順次実行します。</li>
+    <li>送金金額および送金料金は送金指定日前日までに、入金をお願いいたします。残高が不足している場合、送金できません。</li>
+</ul>
+</div>
+<!-- /SC_GWU08_04-I021 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>送金元口座名義人名</th>
+                                <td><em> 
+                                            
+                                                
+                                                    
+                                                        株式会社　ギフトプライス&#8195;様
+                                                        
+                                                            <br>（カ）キ゛フトフ゜ライス&#8195;様）
+                                                        
+                                                    
+                                                    
+                                                
+                                            
+                                        
+                                </em></td>
+                            </tr>
+                            <tr>
+                                <th>ご依頼人名<span class="icon">任意</span></th>
+                                <td><!-- SC_GWU08_04-I022 -->
+<p>送金元口座名義人名以外のお名前を送金先に通知したい場合、以下の「ご依頼人名」欄にご入力ください。</p>
+<ul class="listBa">
+    <li>カタカナ・英数字等の全角48文字以内（漢字・ひらがなは使用できません）</li>
+</ul>
+<!-- /SC_GWU08_04-I022 -->
+                                    <p>
+                                        <input type="text" name="iraiNinMeiOrg" maxlength="48" value="" id="form04">様
+                                    </p><!-- SC_GWU08_04-I023 -->
+<div class="boxTy01">
+<ul class="listBa">
+    <li>ご依頼人名を入力された場合、<strong>送金元口座名義人名・住所は送金先に通知されませんのでご注意ください。<br>
+    送金先が振替口座の場合は、受入明細通知票に送金元口座名義人名および住所等が記載されなくなりますのでご注意ください。</strong></li>
+</ul>
+</div>
+<!-- /SC_GWU08_04-I023 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>メッセージ<span class="icon">任意</span></th>
+                                <td><!-- SC_GWU08_04-I024 -->
+<p>送金先にメッセージを通知することができます。<br>
+カタカナ、英数字等の全角文字100文字以内（漢字、ひらがなは使用できません）</p>
+<!-- /SC_GWU08_04-I024 -->
+                                    <textarea name="tsuikaMessageOrg" cols="50" rows="5" maxlength="100" id="i08Condition_8" class="w75"></textarea>
+                                    <!-- SC_GWU08_04-I025 -->
+<p>送金先口座が総合口座の場合、「送金先口座名義人に対する受入明細票の送付」欄で「送付あり」を選択すると、受入明細票で通知することができます。<br>
+送金先口名義人がゆうちょダイレクトをご利用の場合、入出金明細照会での確認も可能です。</p>
+<!-- /SC_GWU08_04-I025 -->
+                                </td>
+                            </tr>
+                            <tr class="req">
+                                <th>送金先口座名義人<span class="icon">必須</span><br>に対する受入明細<br>票の送付
+                                </th>
+                                <td><!-- SC_GWU08_04-I026 --> 
+<p> 「受入明細票」の送付を希望される場合は、「送付あり」を選択してください。送金先口座が振替口座の場合は必ず送付されます。<br> 
+送金先口座が総合口座の場合は100円、振替口座の場合は無料です。 </p> 
+<!-- /SC_GWU08_04-I026 -->
+                                    <ul class="listRadioBa col2 i08Condition_7">
+                                        <li><input type="radio" name="ukeireMeisaiHyouSoufuSentaku" value="0" checked="checked" id="radio01-01">
+                                            <label for="radio01-01">送付なし</label>
+                                        </li>
+                                        <li><input type="radio" name="ukeireMeisaiHyouSoufuSentaku" value="1" id="radio01-02">
+                                            <label for="radio01-02">送付あり</label>
+                                        </li>
+                                    </ul> <!-- SC_GWU08_04-I027 -->
+<p>受入明細票には、送金金額、送金人の住所（送金元口座にお届けの住所）、氏名（ご依頼人名を入力された場合はご依頼人名のみ）などが記載されます。</p>
+<!-- /SC_GWU08_04-I027 -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- SC_GWU08_04-I028 --><!-- /SC_GWU08_04-I028 -->
+
+                    
+                        <div class="jsSelect04">
+                            <div class="jsSelect04WanTime" style="display: block;">
+
+                                <h3 class="hdgL3Ba">
+                                    <span>ワンタイムパスワード送付先メールアドレス選択</span>
+                                </h3>
+
+                                <!-- SC_GWU08_04-I029 -->
+<p><strong>この取扱にはメールで送付するワンタイムパスワードが必要です。ワンタイムパスワード送付先のメールアドレスを選択してください。</strong></p>
+<!-- /SC_GWU08_04-I029 -->
+
+                                <table class="tblTy03">
+                                    <colgroup>
+                                        <col class="w30">
+                                        <col class="w70">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="req">
+                                            <th>メールアドレス<span class="icon">必須</span><br>選択
+                                            </th>
+                                            <td><!-- SC_GWU08_04-I030 --><!-- /SC_GWU08_04-I030 -->
+
+                                                <ul class="listBtnTy02 i08Condition_9 jsSelect04WanTimeMail" id="wanTimeMailId">
+                                                    
+                                                    
+                                                        
+                                                        <li><input type="radio" name="mailAddressSentaku" value="kusunoki@giftprice.jp" id="radio02_01" class="copyval">
+                                                            <label for="radio02_01">
+                                                                <em>ku****ki@gi********jp</em>
+                                                        </label></li>
+                                                    
+                                                        
+                                                        <li><input type="radio" name="mailAddressSentaku" value="gp-yucho@91932.com" id="radio02_02" class="copyval">
+                                                            <label for="radio02_02">
+                                                                <em>gp****ho@91*****om</em>
+                                                        </label></li>
+                                                    
+                                                        
+                                                        <li><input type="radio" name="mailAddressSentaku" value="k.u.s.u@i.softbank.jp" id="radio02_03" class="copyval">
+                                                            <label for="radio02_03">
+                                                                <em>k.***.u@i.*********jp</em>
+                                                        </label></li>
+                                                    
+                                                </ul> <!-- SC_GWU08_04-I031 -->
+<p class="txtPassBa">ワンタイムパスワードとは、 1回限り有効な半角数字6桁のパスワードで、次の画面で入力いただきます。<br>
+なお、発行から一定時間経過すると無効となりますので、ご注意ください。</p>
+<ul class="listLinkBa">
+    <li><a title="別ウインドウを開きます。" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/security/dr_pc_sc_onetimepassword.html&#39;,&#39;SC_GWU08_04-I031.html&#39;);return false" href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#">ワンタイムパスワードとは？<img src="./ゆうちょダイレクト _ 電信振替_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+    <li><a title="別ウインドウを開きます。" onclick="JavaScript:cgfLoadHomepage(&#39;http://direct-faq.jp-bank.japanpost.jp/faq/show/1&#39;,&#39;SC_GWU08_07-I018.html&#39;);return false" href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#">ワンタイムパスワードを受信できない場合はこちら<img src="./ゆうちょダイレクト _ 電信振替_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+</ul>
+<ul class="listNoticeBa">
+    <li class="single"><span>※</span><strong><span style="font-size: 110%">表示されているメールアドレスを現在使用していないなど、メールが受信できない場合は、書面での初期化手続きが必要になります。</span></strong></li>
+</ul>
+<ul class="listLinkBa">
+    <li><a title="別ウインドウを開きます。" onclick="JavaScript:cgfLoadHomepage(&#39;http://direct-faq.jp-bank.japanpost.jp/faq/show/336&#39;,&#39;SC_GWU08_04-I030.html&#39;);return false" href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#">メールアドレスの初期化<img src="./ゆうちょダイレクト _ 電信振替_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+</ul>
+<!-- /SC_GWU08_04-I031 -->
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                
+                            </div>
+                        </div>
+                    
+                    
+                    <ul class="listBtnTy01 mb50">
+                        <li class="btnBa back">
+                            
+                                
+                                    <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;submitData&#39;,&#39;/tp1web/pc/U080201RED.do&#39;,new Array(&#39;event&#39;),new Array(&#39;U080405&#39;),false);">戻る</a>
+                                
+                                
+                            
+                            
+                        </li>
+                        <li class="btnBa"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="jsModalLinkCondition08" data-modal="modal01">次へ</a>
+                            <input type="button" name="U080407" value="次へ" onclick="javascript:return dcRequest(&#39;submitData&#39;,&#39;/tp1web/pc/U081301BLC.do&#39;,new Array(&#39;event&#39;),new Array(&#39;U080407&#39;),false);" style="display: none;">
+                        </li>
+                    </ul>
+                    <div class="jsModal" data-modal="modal01" style="display: none;">
+                        <div class="boxModalBa">
+                            <h3 class="hdgTy01">
+                                <span>確認</span>
+                            </h3>
+                            <div class="boxBdrTy01 wordBreakAll">
+                                <p>　受入明細票の送付料金が100円かかります。</p>
+<p>　よろしいですか？</p>
+                                <ul class="listBtnBa">
+                                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="close08">いいえ</a></li>
+                                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="execute08_1">はい</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jsModal" data-modal="modal02" style="display: none;">
+                        <div class="boxModalBa">
+                            <h3 class="hdgTy01">
+                                <span>確認</span>
+                            </h3>
+                            <div class="boxBdrTy01 wordBreakAll">
+                                <p>　メッセージを郵送で送金先に通知する場合は、「いいえ」を押して元の画面に戻り、受入明細票の送付欄の「送付あり」を選択してください。</p>
+<p>　　次の画面に進んでよろしいですか？</p>
+                                <ul class="listBtnBa">
+                                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="close08">いいえ</a></li>
+                                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="execute08_1">はい</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jsModal" data-modal="modal03" style="display: none;">
+                        <div class="boxModalBa">
+                            <h3 class="hdgTy01">
+                                <span>確認</span>
+                            </h3>
+                            <div class="boxBdrTy01 wordBreakAll">
+                                <p>　以下のメールアドレスにワンタイムパスワードをお送りします。</p>
+<p>　よろしいですか？</p>
+                                <p>
+                                    <strong class="txtLeadBa">
+                                        <span id="radio02"></span>
+                                    </strong>
+                                </p>
+                                <ul class="listBtnBa">
+                                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="close08">いいえ</a></li>
+                                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="execute08_2">はい</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jsModal" data-modal="modalMail" style="display: none;">
+                        <div class="boxModalBa">
+                            <h3 class="hdgTy01">
+                                <span>確認</span>
+                            </h3>
+                            <div class="boxBdrTy01 wordBreakAll">
+                                <p>　ワンタイムパスワードを送付するメールアドレスを選択して下さい。</p>
+                                <ul class="listBtnBa checkOk">
+                                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="close">OK</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <input type="hidden" id="i08Condition_1" value="00">
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="btnTy02"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#">ページの先頭</a></p>
+
+<div class="boxTelBa">
+<p><img src="./ゆうちょダイレクト _ 電信振替_files/DFCAimgTel01.gif" width="234" height="54" alt="ゆうちょダイレクトサポートデスク（通話料無料） 0120-992504"></p>
+<div>
+<dl>
+<dt>平日</dt>
+<dd>8:30～21:00</dd>
+<dt>土／日／休日</dt>
+<dd>9:00～17:00</dd>
+</dl>
+<p>（12月31日～1月3日は、9:00～17:00）<br>
+<span>※携帯電話・PHSからもご利用いただけます。<br>
+※IP電話等一部ご利用いただけない場合があります。</span></p>
+</div>
+</div>
+
+
+    
+    <div class="jsModal" data-modal="HEADER_HOME0" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="jsModal" data-modal="HEADER_HOME1" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+	            
+	            <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="jsModal" data-modal="HEADER_HOME2" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="jsModal" data-modal="HEADER_LOGOUT" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ログアウトしますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="jsModal" data-modal="HEADER_LOGOUT_RIYOUTEISHI" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p><strong>【必ずご確認ください】<br>
+　利用停止の前に、ワンタイムパスワード送付用にご登録いただいている携帯電話・スマートフォンのメールアドレスに誤りがないか、ご確認をお願いいたします。メールが受信できない場合、次回ログインができなくなります。</strong><br>
+　ワンタイムパスワード送付用メールアドレスのご確認は、一度「いいえ」を押し、メニューの「ご登録内容確認・変更」から、ご確認いただけます。<br>
+利用停止が完了後、ご登録いただいているメールアドレスにメールでご連絡いたしますのでご確認ください。<br>
+<br>
+<strong>　以上をご確認のうえ、利用停止してログアウトしてよろしいですか？</strong></p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+    
+
+
+
+
+    
+
+
+
+
+    
+
+
+<div id="strSub">
+    <div id="nav" class="boxMenu">
+        
+        <h2 class="hdgMenuBa">メニュー</h2>
+        <p class="btnTy04">
+            <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="jsModalLink" data-modal="MENU_DIRECTTOP">ダイレクトトップ</a>
+            <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U030101RED.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">ダイレクトトップ</a>
+        </p>
+        <ul class="navGlobal">
+            
+                <li><span>セキュリティ</span>
+                    <ul>
+                        <li class="icon10"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U720101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">トークンの設定</a></li>
+                    </ul>
+                </li>
+            
+            <li><span>照会</span>
+                <ul>
+                    <li class="icon01"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U050101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">現在高照会</a></li>
+                    <li class="icon02"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U070101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">入出金明細照会</a></li>
+                    
+                </ul>
+            </li>
+            <li><span>送金</span>
+                <ul>
+                    
+                        
+                        <li class="icon03"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U080101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">振込・振替</a></li>
+                        <li class="icon04"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U100101SCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">税金･各種料金の<br>払込み</a></li>
+                    
+                    
+                </ul>
+            </li>
+            <li><span>貯金</span>
+                <ul>
+                    <li class="icon05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U110201KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">定額貯金・定期貯金</a></li>
+                    <li class="icon06"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U280101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">ボランティア貯金</a></li>
+                </ul>
+            </li>
+            <li><span>資産運用</span>
+                <ul>
+                    
+                        
+                        <li class="icon07"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U710101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">投資信託</a></li>
+                    
+                    
+                </ul>
+            </li>
+            
+                
+                
+                <li><span>申込</span>
+                    <ul>
+                    
+                        
+                            
+                            <li class="icon08">
+                                <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U650101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);"><img src="./ゆうちょダイレクト _ 電信振替_files/DFCAdirectPlusLogo.gif" width="170"><br>(無通帳型総合口座)への切替</a>
+                            </li>
+                        
+                        
+                        <li class="noBoder">
+                            <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/plus/dr_pc_pl_index.html&#39;, &#39;FA0004&#39;);">
+                                <span class="linkplus">ゆうちょダイレクト＋</span>について
+                            <img src="./ゆうちょダイレクト _ 電信振替_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a>
+                        </li>
+                    
+                    
+                    </ul>
+                </li>
+            
+            <li><span>各種手続等</span>
+                <ul>
+                    
+                        
+                        
+                            
+                            <li class="icon08"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U690101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">メッセージボックスの確認</a></li>
+                        
+                        
+                    
+                    <li class="icon08"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U140101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">ご登録内容確認・<br>変更</a></li>
+                    <li class="icon09"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U250101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">ご利用結果確認</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="listMenuBa">
+        <li class="icon01"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/guide/dr_pc_gd_index.html&#39;, &#39;FA0005&#39;);">操作方法<img src="./ゆうちょダイレクト _ 電信振替_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+        <li class="icon02"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="JavaScript:cgfLoadHomepage(&#39;http://direct-faq.jp-bank.japanpost.jp/&#39;, &#39;FA0006&#39;);">よくあるご質問<img src="./ゆうちょダイレクト _ 電信振替_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+        <li class="icon03"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/contact/dr_pc_ct_index.html&#39;, &#39;FA0007&#39;);">お問い合わせ<img src="./ゆうちょダイレクト _ 電信振替_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+    </ul>
+
+    
+    
+    <div class="jsModal" data-modal="MENU_DIRECTTOP" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01">
+                <span>確認</span>
+            </h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ダイレクトトップへ移動します。よろしいですか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U080402SCR.do?RedirectToken=e50e3271c372764f9ba2aa054ed16dff3155a851#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /strSub -->
+
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+                
+                
+                <!-- EndMenu('1'); -->
+                
+            
+            
+            
+            
+            
+            
+        
+        
+    
+    
+
+
+
+
+
+<div id="footer">
+<p id="footerLogo01"><img src="./ゆうちょダイレクト _ 電信振替_files/DFCAfooterLogo01.gif" width="114" height="25" alt="JP 日本郵政グループ"></p>
+<p id="footerCopy">Copyright &#169; JAPAN POST BANK Co.,Ltd All Rights Reserved.</p>
+</div><!-- /footer -->
+<a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U000101ANA.do" id="exlink" style="display:none;"></a>
+        </div>
+    </form>
+<form name="simpleTransitionForm" method="post"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="61d8942f73284cc2fd99366bc726cc97b0556e8e"></div><div><input type="hidden" name="event" value=""></div></form>
+</body></html>

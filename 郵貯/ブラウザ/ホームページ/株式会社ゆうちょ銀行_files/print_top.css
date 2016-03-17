@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body {
+	background-image: none;
+	background-color: #ffffff;
+}
+div#header {
+	height: 65px;
+}
+div#header h1 {
+	display: block!important;
+}
+div#header p#h_h1 {
+	display: none!important;
+}
+#h_code, #h_font_size, #h_search, #h_submenu, #h_g_menu, #h_btn_area {
+	display: none!important;
+}
+div#footer_group, #footer_link {
+	display: none;
+}
+@-moz-document url-prefix() {
+	#print_wrapper {
+		position:relative;
+		width:940px;
+		min-height:900px;
+	}
+	#contents {
+		float:none;
+		position:absolute;
+		right:0;
+		top:0;
+	}
+	#side_menu {
+		float:none;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+}
+

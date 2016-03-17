@@ -24,9 +24,6 @@ def checkMail(mailhost, accout, password):
         con.select('INBOX', readonly=True)
         flag, data = con.search(None, 'ALL')
 
-        #print data[0]
-        #exit()
-
         print('Accout : ' + accout)
         for num in (data[0]).split(' '):
             typ, msg_data = con.fetch(num, '(RFC822)')
@@ -34,6 +31,9 @@ def checkMail(mailhost, accout, password):
             print('No : ' + num)
             for response_part in msg_data:
                 if isinstance(response_part, tuple):
+
+                    print response_part
+                    exit()
 
                     msg = email.message_from_string(response_part[1])
                     ls = msg["From"].split(' ')

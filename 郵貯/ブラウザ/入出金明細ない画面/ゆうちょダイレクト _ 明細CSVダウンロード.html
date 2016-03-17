@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0115)https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="1 Sep 2000 00:00:00 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<title>ゆうちょダイレクト | 明細CSVダウンロード</title>
+<link href="./ゆうちょダイレクト _ 明細CSVダウンロード_files/dgCAbase.css" rel="stylesheet" type="text/css" media="all">
+<script src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/jquery.js" type="text/javascript" id="jqueryjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/mjl.js" type="text/javascript" id="mjljs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/run.js" type="text/javascript" id="runjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/dgbaRequestController.js" language="JavaScript" type="text/JavaScript" id="dgbaRequestControllerjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="https://cache.jp-bank.japanpost.jp/pages/pc/etc/js/selectivizr.js" type="text/javascript" id="selectivizrjs" context-root="https://cache.jp-bank.japanpost.jp"></SCRIPT>
+<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://cache.jp-bank.japanpost.jp/pages/pc/etc/css/dgCAIE8filter.css" rel="stylesheet" type="text/css">
+<![endif]-->
+
+</head>
+
+<body>
+
+    <form name="submitData" method="post" autocomplete="off" onsubmit="javascript:return false;"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="a47bc2b309349d940ee602d6fa9c3acd61f60218"></div><div><input type="hidden" name="event" value=""></div>
+        <input type="hidden" name="csvDownloadBangou" value="">
+        <div id="wrapper">
+            
+            
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="header">
+	<p id="headerLogo01">
+	    <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/index.html&#39;, &#39;FA0008&#39;);"><img src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/DFCAheaderLogo01.gif" width="291" height="60" alt="ゆうちょ銀行"></a>
+	</p>
+	<p id="headerLinkHome">
+	    
+        
+        
+        
+            
+            
+	            
+	            
+	                
+	                    
+	                        
+	                        <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="jsModalLink" data-modal="HEADER_HOME0">ホームへ</a><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U270201BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">ホームへ</a>
+	                    
+	                    
+	                
+	                
+	            
+            
+        
+	</p>
+	<p id="headerLogo02">
+	    <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/dr_pc_index.html&#39;, &#39;FA0009&#39;);"><img src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/DFCAheaderLogo02.gif" width="260" height="59" alt="ゆうちょダイレクト"></a>
+	</p>
+	<p id="headerLogout" class="btnTy01">
+        
+        
+            
+                
+                <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="jsModalLink" data-modal="HEADER_LOGOUT_RIYOUTEISHI">利用停止してログアウト（推奨）</a><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U380501BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">利用停止してログアウト（推奨）</a>
+            
+            
+            <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="jsModalLink" data-modal="HEADER_LOGOUT">ログアウト</a><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U040101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">ログアウト</a>
+        
+        
+	</p>
+	</div><!-- /header -->
+
+
+    
+
+
+            <div id="structure">
+
+                <div id="strMain">
+                    
+                    <h1 class="hdgL1Ba">
+                        <span>入出金明細照会</span>
+                    </h1>
+                    
+                    
+
+                    <h2 class="hdgL2Ba">
+                        <span>データダウンロード（CSV形式）</span>
+                    </h2>
+                    <!-- SC_GWU59_01-I003 -->
+<p>ご希望のファイルのダウンロードボタンを押して、ダウンロードしてください。（ダウンロードする入出金明細がない場合には、ダウンロードボタンは表示されません。）</p>
+<!-- /SC_GWU59_01-I003 -->
+
+                    
+                    
+                        <p>出力明細は0件です。</p>
+
+                    
+
+                    
+                    
+                    <!-- SC_GWU59_01-I005 -->
+<p>zipファイルは圧縮ファイルです。解凍ソフト等で解凍してから、ご利用ください。</p>
+<p><br>
+<!-- /SC_GWU59_01-I005 --></p>
+
+
+                    <ul class="listBtnTy01">
+                        <li class="btnBa back"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;submitData&#39;,&#39;/tp1web/pc/U070101KCK.do&#39;,new Array(&#39;event&#39;),new Array(&#39;U590103&#39;),false);">戻る</a></li>
+                    </ul>
+                    <ul class="listBtnTy01">
+                        <li class="btnTy04">
+                            <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="jsModalLink" data-modal="modal01">ダイレクトトップ</a>
+                            <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;submitData&#39;,&#39;/tp1web/pc/U030101RED.do&#39;,new Array(&#39;event&#39;),new Array(&#39;U590104&#39;),false);" style="display: none;">ダイレクトトップ</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="jsModal" data-modal="modal01" style="display: none;">
+                        <div class="boxModalBa">
+                            <h3 class="hdgTy01">
+                                <span>確認</span>
+                            </h3>
+                            <div class="boxBdrTy01 wordBreakAll">
+                                <p>　ダイレクトトップへ移動します。よろしいですか？</p>
+                                <ul class="listBtnBa">
+                                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="close">いいえ</a></li>
+                                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="execute">はい</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="btnTy02"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#">ページの先頭</a></p>
+
+<div class="boxTelBa">
+<p><img src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/DFCAimgTel01.gif" width="234" height="54" alt="ゆうちょダイレクトサポートデスク（通話料無料） 0120-992504"></p>
+<div>
+<dl>
+<dt>平日</dt>
+<dd>8:30～21:00</dd>
+<dt>土／日／休日</dt>
+<dd>9:00～17:00</dd>
+</dl>
+<p>（12月31日～1月3日は、9:00～17:00）<br>
+<span>※携帯電話・PHSからもご利用いただけます。<br>
+※IP電話等一部ご利用いただけない場合があります。</span></p>
+</div>
+</div>
+
+
+    
+    <div class="jsModal" data-modal="HEADER_HOME0" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="jsModal" data-modal="HEADER_HOME1" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+	            
+	            <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="jsModal" data-modal="HEADER_HOME2" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="jsModal" data-modal="HEADER_LOGOUT" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ログアウトしますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="jsModal" data-modal="HEADER_LOGOUT_RIYOUTEISHI" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p><strong>【必ずご確認ください】<br>
+　利用停止の前に、ワンタイムパスワード送付用にご登録いただいている携帯電話・スマートフォンのメールアドレスに誤りがないか、ご確認をお願いいたします。メールが受信できない場合、次回ログインができなくなります。</strong><br>
+　ワンタイムパスワード送付用メールアドレスのご確認は、一度「いいえ」を押し、メニューの「ご登録内容確認・変更」から、ご確認いただけます。<br>
+利用停止が完了後、ご登録いただいているメールアドレスにメールでご連絡いたしますのでご確認ください。<br>
+<br>
+<strong>　以上をご確認のうえ、利用停止してログアウトしてよろしいですか？</strong></p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+                </div>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+    
+
+
+
+
+    
+
+
+
+
+    
+
+
+<div id="strSub">
+    <div id="nav" class="boxMenu">
+        
+        <h2 class="hdgMenuBa">メニュー</h2>
+        <p class="btnTy04">
+            <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="jsModalLink" data-modal="MENU_DIRECTTOP">ダイレクトトップ</a>
+            <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U030101RED.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">ダイレクトトップ</a>
+        </p>
+        <ul class="navGlobal">
+            
+                <li><span>セキュリティ</span>
+                    <ul>
+                        <li class="icon10"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U720101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">トークンの設定</a></li>
+                    </ul>
+                </li>
+            
+            <li><span>照会</span>
+                <ul>
+                    <li class="icon01"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U050101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">現在高照会</a></li>
+                    <li class="icon02"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U070101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">入出金明細照会</a></li>
+                    
+                </ul>
+            </li>
+            <li><span>送金</span>
+                <ul>
+                    
+                        
+                        <li class="icon03"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U080101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">振込・振替</a></li>
+                        <li class="icon04"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U100101SCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">税金･各種料金の<br>払込み</a></li>
+                    
+                    
+                </ul>
+            </li>
+            <li><span>貯金</span>
+                <ul>
+                    <li class="icon05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U110201KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">定額貯金・定期貯金</a></li>
+                    <li class="icon06"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U280101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">ボランティア貯金</a></li>
+                </ul>
+            </li>
+            <li><span>資産運用</span>
+                <ul>
+                    
+                        
+                        <li class="icon07"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U710101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">投資信託</a></li>
+                    
+                    
+                </ul>
+            </li>
+            
+                
+                
+                <li><span>申込</span>
+                    <ul>
+                    
+                        
+                            
+                            <li class="icon08">
+                                <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U650101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);"><img src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/DFCAdirectPlusLogo.gif" width="170"><br>(無通帳型総合口座)への切替</a>
+                            </li>
+                        
+                        
+                        <li class="noBoder">
+                            <a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/plus/dr_pc_pl_index.html&#39;, &#39;FA0004&#39;);">
+                                <span class="linkplus">ゆうちょダイレクト＋</span>について
+                            <img src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a>
+                        </li>
+                    
+                    
+                    </ul>
+                </li>
+            
+            <li><span>各種手続等</span>
+                <ul>
+                    
+                        
+                        
+                            
+                            <li class="icon08"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U690101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">メッセージボックスの確認</a></li>
+                        
+                        
+                    
+                    <li class="icon08"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U140101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">ご登録内容確認・<br>変更</a></li>
+                    <li class="icon09"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U250101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">ご利用結果確認</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="listMenuBa">
+        <li class="icon01"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/guide/dr_pc_gd_index.html&#39;, &#39;FA0005&#39;);">操作方法<img src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+        <li class="icon02"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="JavaScript:cgfLoadHomepage(&#39;http://direct-faq.jp-bank.japanpost.jp/&#39;, &#39;FA0006&#39;);">よくあるご質問<img src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+        <li class="icon03"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/contact/dr_pc_ct_index.html&#39;, &#39;FA0007&#39;);">お問い合わせ<img src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+    </ul>
+
+    
+    
+    <div class="jsModal" data-modal="MENU_DIRECTTOP" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01">
+                <span>確認</span>
+            </h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ダイレクトトップへ移動します。よろしいですか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U590102SCR.do?RedirectToken=53d882e75477c707b1fab6a71ac4bd48072b472c#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /strSub -->
+
+
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+                
+                
+                <!-- EndMenu('1'); -->
+                
+            
+            
+            
+            
+            
+            
+        
+        
+    
+    
+
+
+
+
+
+    
+
+<div id="footer">
+<p id="footerLogo01"><img src="./ゆうちょダイレクト _ 明細CSVダウンロード_files/DFCAfooterLogo01.gif" width="114" height="25" alt="JP 日本郵政グループ"></p>
+<p id="footerCopy">Copyright &#169; JAPAN POST BANK Co.,Ltd All Rights Reserved.</p>
+</div><!-- /footer -->
+<a href="https://direct3.jp-bank.japanpost.jp/tp1web/pc/U000101ANA.do" id="exlink" style="display:none;"></a>
+        </div>
+    </form>
+<form name="simpleTransitionForm" method="post"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="a47bc2b309349d940ee602d6fa9c3acd61f60218"></div><div><input type="hidden" name="event" value=""></div></form>
+</body></html>

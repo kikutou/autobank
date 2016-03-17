@@ -1,0 +1,1214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0115)https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8 -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="1 Sep 2000 00:00:00 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<title>ゆうちょダイレクト | 入出金明細照会</title>
+<link href="./ゆうちょダイレクト _ 入出金明細照会_files/dgCAbase.css" rel="stylesheet" type="text/css" media="all">
+<script src="./ゆうちょダイレクト _ 入出金明細照会_files/jquery.js" type="text/javascript" id="jqueryjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 入出金明細照会_files/mjl.js" type="text/javascript" id="mjljs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 入出金明細照会_files/run.js" type="text/javascript" id="runjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<link href="./ゆうちょダイレクト _ 入出金明細照会_files/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css">
+<script src="./ゆうちょダイレクト _ 入出金明細照会_files/jquery-ui-1.10.3.custom.min.js" type="text/javascript" id="jquery-ui-1.10.3.custom.minjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 入出金明細照会_files/jquery.ui.datepicker-ja.js" type="text/javascript" id="jquery.ui.datepicker-jajs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 入出金明細照会_files/calender.js" type="text/javascript" id="calenderjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<script src="./ゆうちょダイレクト _ 入出金明細照会_files/dgbaRequestController.js" language="JavaScript" type="text/JavaScript" id="dgbaRequestControllerjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="https://cache.jp-bank.japanpost.jp/pages/pc/etc/js/selectivizr.js" type="text/javascript" id="selectivizrjs" context-root="https://cache.jp-bank.japanpost.jp"></SCRIPT>
+<![endif]-->
+<!--[if lt IE 9]>
+<link href="https://cache.jp-bank.japanpost.jp/pages/pc/etc/css/dgCAIE8filter.css" rel="stylesheet" type="text/css">
+<![endif]-->
+<script type="text/javascript">
+    var y01=2016,
+        m01=02,
+        d01=01;
+    var y02=2016,
+        m02=03,
+        d02=16;
+</script>
+</head>
+<body>
+
+    <form name="submitData" method="post" autocomplete="off" onsubmit="javascript:return false;"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="31b5e76826daf904b8bb0620d17821832a18e7b7"></div><div><input type="hidden" name="event" value=""></div>
+        <input type="hidden" name="startIndex" value="0">
+        
+            
+        
+        
+    
+        
+        
+        
+        <div id="wrapper">
+            
+            
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="header">
+	<p id="headerLogo01">
+	    <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/index.html&#39;, &#39;FA0008&#39;);"><img src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAheaderLogo01.gif" width="291" height="60" alt="ゆうちょ銀行"></a>
+	</p>
+	<p id="headerLinkHome">
+	    
+        
+        
+        
+            
+            
+	            
+	            
+	                
+	                    
+	                        
+	                        <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="jsModalLink" data-modal="HEADER_HOME0">ホームへ</a><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U270201BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">ホームへ</a>
+	                    
+	                    
+	                
+	                
+	            
+            
+        
+	</p>
+	<p id="headerLogo02">
+	    <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/dr_pc_index.html&#39;, &#39;FA0009&#39;);"><img src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAheaderLogo02.gif" width="260" height="59" alt="ゆうちょダイレクト"></a>
+	</p>
+	<p id="headerLogout" class="btnTy01">
+        
+        
+            
+                
+                <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="jsModalLink" data-modal="HEADER_LOGOUT_RIYOUTEISHI">利用停止してログアウト（推奨）</a><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U380501BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">利用停止してログアウト（推奨）</a>
+            
+            
+            <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="jsModalLink" data-modal="HEADER_LOGOUT">ログアウト</a><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U040101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">ログアウト</a>
+        
+        
+	</p>
+	</div><!-- /header -->
+
+
+    
+
+
+            <div id="structure">
+                <div id="strMain">
+                    <h1 class="hdgL1Ba">
+                        <span>入出金明細照会</span>
+                    </h1>
+                    
+                    <!-- SC_GWU07_02-I002 -->
+<p>明細をご覧になりたい「口座」、「明細種別」および「表示期間」を指定し、「表示する」を押すと、画面下部に明細が表示されます。</p>
+<!-- /SC_GWU07_02-I002 -->
+                    
+                    <div id="jsInput01">
+                        <div class="boxShadowBa">
+                            <h3 class="hdgTy01">
+                                <span>口座</span>
+                            </h3>
+                            <!-- SC_GWU07_02-I003 -->
+<p>明細をご覧になる口座を、プルダウンから選択してください。</p>
+<!-- /SC_GWU07_02-I003 -->
+                            <div class="boxBdrTy01">
+                                <div class="jsSelect03">
+                                    <select name="kouzaTsuuban" class="selectBa jsSelect03Select"><option value="1" selected="selected">総合：10110-75294431(代表)</option></select>
+                                    <ul class="jsSelect03Price pt10 alignR">
+                                        
+                                            
+                                                
+                                                    
+                                                        <li style="display: list-item;"><em class="txtLeadBa">現在高：<span class="sum">100,000円
+                                                                </span>
+                                                            </em></li>
+                                                        <input type="hidden" name="loginChokinShubetsuKubun" value="1" id="logChoShu-00">
+                                                        <input type="hidden" name="loginMutsuuchouKataSougouKouzaHyouji" value="0" id="mutsuuChoKouza-00">
+                                                    
+                                                
+                                            
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <h3 class="hdgTy01">
+                                <span>明細種別</span>
+                            </h3>
+                            <!-- SC_GWU07_02-I005 -->
+<p>ご覧になる明細の種別を選択してください。<br>
+<br>
+「入金（払込み・振込）」を選択すると入出金明細のうち対象のお取り扱いのみを表示します。</p>
+<ul class="listLinkBa">
+    <li><a title="別ウインドウを開きます。" onclick="JavaScript:cgfLoadHomepage(&#39;http://direct-faq.jp-bank.japanpost.jp/faq/show/12&#39;,&#39;SC_GWU07_02-I005.html&#39;);return false" href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#">「入金（払込み・振込）」で確認できるお取り扱い<img src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+</ul>
+<p>自動払込みによる入金は、「入金（払込み・振込）」を選択すると表示されませんので、「入出金」を選択してご確認ください。<br>
+<br>
+「通帳未記入分」を選択すると、総合口座通帳に未記入のお取り扱いをご覧になれます。（振替口座および<span class="plus">ゆうちょダイレクト＋（プラス）</span>はご利用できません。）</p>
+<!-- /SC_GWU07_02-I005 -->
+                            <div class="boxBdrTy01">
+                                <br>
+                                <ul class="listBtnBa" id="i01Radio">
+                                    <li class="btnTy05"><input type="radio" name="shoukaiTaishouSentaku" value="01" data-link="details_result_01.html" checked="checked" id="radio01-01"><label for="radio01-01">入出金</label></li>
+                                    <li class="btnTy05"><input type="radio" name="shoukaiTaishouSentaku" value="02" data-link="details_property_01.html" id="radio01-02"><label for="radio01-02">入金（払込み・振込）</label></li>
+                                    <li class="btnTy05"><input type="radio" name="shoukaiTaishouSentaku" value="03" data-link="none" id="radio01-03"><label for="radio01-03">通帳未記入分</label></li>
+                                </ul>
+                            </div>
+                            
+                            <div id="i01Hidden">
+                                <h3 class="hdgTy01">
+                                    <span>表示期間</span>
+                                </h3>
+                                <table class="tblTy04">
+                                    <colgroup>
+                                        <col class="w20">
+                                        <col class="w80">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr class="active">
+                                            <th>
+                                                <p>
+                                                    <label for="radio02-01">
+                                                        <input type="radio" name="shoukaiHaniSentaku" value="00" checked="checked" id="radio02-01">
+                                                        <em>期間を選択</em>
+                                                    </label>
+                                                </p>
+                                            </th>
+                                            <td><!-- SC_GWU07_02-I007 -->
+<p>ご覧になる明細の期間を選択してください。</p>
+<ul class="listLinkBa">
+    <li><a title="別ウインドウを開きます。" onclick="JavaScript:cgfLoadHomepage(&#39;http://direct-faq.jp-bank.japanpost.jp/faq/show/96&#39;,&#39;SC_GWU07_02-I005.html&#39;);return false" href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#">照会可能な期間について<img src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+</ul>
+<!-- /SC_GWU07_02-I007 -->
+                                                <ul class="listBtnBa" id="i01Radio3">
+                                                    
+                                                        
+                                                        
+                                                            <li class="btnTy05">
+                                                                <input type="radio" name="nyuushukkinShoukaiHizukeShubetsu" value="42" checked="checked" id="radio03-01">
+                                                                <label for="radio03-01">
+                                                                    直近１０日分
+                                                                </label>
+                                                            </li>
+                                                    
+                                                        
+                                                        
+                                                            <li class="btnTy05">
+                                                                <input type="radio" name="nyuushukkinShoukaiHizukeShubetsu" value="40" id="radio03-02" disabled="disabled">
+                                                                <label for="radio03-02">
+                                                                    直近３か月分
+                                                                </label>
+                                                            </li>
+                                                    
+                                                        
+                                                        
+                                                            <li class="btnTy05">
+                                                                <input type="radio" name="nyuushukkinShoukaiHizukeShubetsu" value="41" id="radio03-03" disabled="disabled">
+                                                                <label for="radio03-03">
+                                                                    直近６か月分
+                                                                </label>
+                                                            </li>
+                                                    
+                                                        
+                                                        
+                                                            <li class="btnTy05">
+                                                                <input type="radio" name="nyuushukkinShoukaiHizukeShubetsu" value="30" id="radio03-04">
+                                                                <label for="radio03-04">
+                                                                    先月分
+                                                                </label>
+                                                            </li>
+                                                    
+                                                        
+                                                        
+                                                            <li class="btnTy05">
+                                                                <input type="radio" name="nyuushukkinShoukaiHizukeShubetsu" value="20" id="radio03-05">
+                                                                <label for="radio03-05">
+                                                                    今月分
+                                                                </label>
+                                                            </li>
+                                                    
+                                                        
+                                                        
+                                                            <li class="btnTy05">
+                                                                <input type="radio" name="nyuushukkinShoukaiHizukeShubetsu" value="01" id="radio03-06">
+                                                                <label for="radio03-06">
+                                                                    全期間
+                                                                </label>
+                                                            </li>
+                                                    
+                                                </ul> <p><!-- SC_GWU07_02-I008 --></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><p id="i01Radio2">
+                                                    <label for="radio02-02">
+                                                        <input type="radio" name="shoukaiHaniSentaku" value="01" id="radio02-02">
+                                                        <em>日付を指定</em>
+                                                    </label>
+                                                </p></th>
+                                            <td><!-- SC_GWU07_02-I009 -->
+<p>ご覧になる明細の期間を、以下のプルダウンから選択してください。
+</p>
+<!-- /SC_GWU07_02-I009 -->
+                                                <div class="alignL">
+                                                    <div class="calender01">
+                                                        <select name="nyuushukkinShoukaiHaniKaishiNen" class="year01 selectBa"><option value="2016" selected="selected">平成28(2016)</option></select>&nbsp;年
+                                                        <select name="shiteiKanouKaishiTsukiId" class="month01 selectBa"><option value="01">1</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="02" selected="selected">2</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="03">3</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="04">4</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="05">5</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="06">6</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="07">7</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="08">8</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="09">9</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="10">10</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="11">11</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="12">12</option></select>&nbsp;月
+                                                        <select name="shiteiKanouKaishiHiId" class="day01 selectBa"><option value="01" selected="selected">1</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="02">2</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="03">3</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="04">4</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="05">5</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="06">6</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="07">7</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="08">8</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="09">9</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="10">10</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="11">11</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="12">12</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="13">13</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="14">14</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="15">15</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="16">16</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="17">17</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="18">18</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="19">19</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="20">20</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="21">21</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="22">22</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="23">23</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="24">24</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="25">25</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="26">26</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="27">27</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="28">28</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="29">29</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="30">30</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="31">31</option></select>&nbsp;日
+                                                        <input type="text" id="dateCal01" class="hide hasDatepicker" style="display: none;"><img class="ui-datepicker-trigger" src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAiconDate01.gif" alt="..." title="...">
+                                                        ～
+                                                    </div>
+                                                </div>
+                                                <div class="alignR">
+                                                    <div class="calender02">
+                                                        <select name="nyuushukkinShoukaiHaniShuuryouNen" class="year02 selectBa"><option value="2016" selected="selected">平成28(2016)</option></select>&nbsp;年
+                                                        <select name="shiteiKanouShuuryouTsukiId" class="month01 selectBa"><option value="01">1</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="02">2</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="03" selected="selected">3</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="04">4</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="05">5</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="06">6</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="07">7</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="08">8</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="09">9</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="10">10</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="11">11</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="12">12</option></select>&nbsp;月
+                                                        <select name="shiteiKanouShuuryouHiId" class="day01 selectBa"><option value="01">1</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="02">2</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="03">3</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="04">4</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="05">5</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="06">6</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="07">7</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="08">8</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                    <option value="09">9</option>
+                                                                
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="10">10</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="11">11</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="12">12</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="13">13</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="14">14</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="15">15</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="16" selected="selected">16</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="17">17</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="18">18</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="19">19</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="20">20</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="21">21</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="22">22</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="23">23</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="24">24</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="25">25</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="26">26</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="27">27</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="28">28</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="29">29</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="30">30</option>
+                                                                
+                                                            
+                                                                
+                                                                
+                                                                    <option value="31">31</option></select>&nbsp;日
+                                                        <input type="text" id="dateCal02" class="hide hasDatepicker" style="display: none;"><img class="ui-datepicker-trigger" src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAiconDate01.gif" alt="..." title="...">
+                                                    </div>
+                                                </div> <!-- SC_GWU07_02-I010 -->
+<p>前月1日～照会時点の明細がご覧になれます。<br>
+振替口座および<span class="plus">ゆうちょダイレクト＋（プラス）</span>の場合、14か月前の1日～照会時点の明細がご覧になれます（2015年8月1日以降のお取り扱いがご覧になれます）。</p>
+<p>※ゆうちょダイレクトのお申し込み日以前のお取り扱いはご覧になれません。</p>
+<!-- /SC_GWU07_02-I010 -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <p>
+                                                    <label for="radio02-03">
+                                                        <input type="radio" name="shoukaiHaniSentaku" value="02" id="radio02-03" disabled="disabled">
+                                                        <em>前回照会以降の受入明細</em>
+                                                    </label>
+                                                </p>
+                                            </th>
+                                            <td>
+                                                <ul class="jsSelect03Link">
+                                                    
+                                                            
+                                                                
+                                                                    
+                                                                            <li style="display: list-item;">平成 28 年  2 月  1 日
+                                                                            以降の払込み・振込入金明細
+                                                                            </li>
+                                                                    
+                                                                
+                                                            
+                                                    
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- SC_GWU07_02-I011 -->
+<ul>
+<li>1回の照会でご覧になれる明細は100明細までです。</li>
+</ul>
+<!-- /SC_GWU07_02-I011 -->
+                        <p><!-- SC_GWU07_02-I012 --></p>
+                        <ul class="listBtnBa dualBtn alignC">
+                            <li class="btnTy08" id="i02Hidden">
+                                <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="jsModalLink" data-modal="modal01">データダウンロード（CSV形式）</a>
+                            <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;submitData&#39;,&#39;/tp1web/pc/U590101BLC.do&#39;,new Array(&#39;event&#39;),new Array(&#39;U070205&#39;),false);" style="display: none;">データダウンロード（CSV形式）</a></li>
+                            <li class="btnBa submit"><input type="button" name="U070204" value="表示する" onclick="javascript:return dcRequest(&#39;submitData&#39;,&#39;/tp1web/pc/U070202BLC.do&#39;,new Array(&#39;event&#39;),new Array(&#39;U070204&#39;),false);" class="jsCheckdate"></li>
+                        </ul>
+                    </div>
+                    <div class="boxTy02">
+                        <p>
+                            <em> 平成 28 年  3 月  7 日&nbsp;～&nbsp;
+                                平成 28 年  3 月 16 日
+                            </em>の結果を表示しています。
+                        </p>
+                    </div>
+                    
+                        <!-- SC_GWU07_02-I013 -->
+<p>お客さまの入出金明細は次のとおりです。<br>
+このページを印刷する場合には、「印刷用画面を表示する」を押して、印刷してください。</p>
+<!-- /SC_GWU07_02-I013 -->
+                    
+                    
+                    <p class="btnTy06 alignR">
+                        <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcPrintRequest(&#39;submitData&#39;,&#39;/tp1web/pc/U070501RED.do&#39;,new Array(&#39;event&#39;),new Array(&#39;U070207&#39;),true);">印刷用画面を表示する</a>
+                    </p>
+                    
+                        <div class="layColumn col3 adjust mb05">
+                            <div class="col w30">
+                                <p class="fs12">
+                                    1-1件を表示(全1件中)
+                                </p>
+                            </div>
+                            <div class="col w70 alignR">
+                                <p>表示件数：<select name="kensuuSentaku" onchange="javascript:return dcRequest(&#39;submitData&#39;,&#39;/tp1web/pc/U070201RED.do&#39;,new Array(&#39;startIndex&#39;,&#39;event&#39;,&#39;org.apache.struts.taglib.html.TOKEN&#39;),new Array(&#39;0&#39;,&#39;kensuuSentaku&#39;,&#39;31b5e76826daf904b8bb0620d17821832a18e7b7&#39;),false);" class="selectBa"><option value="20">20件</option>
+                                    
+                                        <option value="50">50件</option>
+                                    
+                                        <option value="100">100件</option></select>&nbsp;表示順序：<select name="hyoujiJunjoSentaku" onchange="javascript:return dcRequest(&#39;submitData&#39;,&#39;/tp1web/pc/U070202BLC.do&#39;,new Array(&#39;startIndex&#39;,&#39;event&#39;,&#39;org.apache.struts.taglib.html.TOKEN&#39;),new Array(&#39;0&#39;,&#39;hyoujiJunjoSentaku&#39;,&#39;31b5e76826daf904b8bb0620d17821832a18e7b7&#39;),false);" class="selectBa w-20"><option value="01" selected="selected">昇順</option>
+                                        
+                                            <option value="02">降順</option></select>
+                                </p>
+                            </div>
+                        </div>
+                        <ol class="listTy02">
+                            
+                            
+                            
+                        </ol>
+                        <div class="boxShadowBa">
+                            <table class="tblTy91 tblTy06">
+                                <colgroup>
+                                    <col class="w15">
+                                    <col class="w15">
+                                    <col class="w15">
+                                    <col class="w35">
+                                    
+                                        <col class="w20">
+                                    
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>取引年月日</th>
+                                        <th>預入金額</th>
+                                        <th>支払金額</th>
+                                        <th>預入／支払内容</th>
+                                        
+                                            <th>現在（貸付）高</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                        
+                                        
+                                            
+                                                
+                                                
+                                            
+                                            
+                                        
+                                        <tr>
+                                            <td>28-03-14
+                                            </td>
+                                            <td class="alignR">
+                                                    100,000円
+                                                </td>
+                                            <td class="alignR"></td>
+                                            <td>振込　カ．キ゛フトフ゜ライス&nbsp;
+                                            </td>
+                                            
+                                                <td class="alignR">
+                                                    100,000円
+                                                </td>
+                                            
+                                        </tr>
+                                        
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <ol class="listTy02">
+                            
+                            
+                            
+                        </ol>
+                        <p class="fs12">
+                            1-1件を表示(全1件中)
+                        </p>
+                        <!-- SC_GWU07_02-I015 -->
+<p>お取り扱いが100明細を超えた場合には新しいお取り扱いから100明細を表示します。（ただし、1日のお取り扱いが100明細を超えたり、事務処理上お取り扱い日より後に入出金処理した場合には、明細が欠落したり、表示順序が通帳と異なって表示されることがありますので、ご了承ください。）<br>
+取消等により、明細の表示順序や現在（貸付）高が通帳と異なって表示されることがあります。</p>
+<!-- /SC_GWU07_02-I015 -->
+                    
+                    
+                    <p class="btnTy04">
+                        <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;submitData&#39;,&#39;/tp1web/pc/U030101RED.do&#39;,new Array(&#39;event&#39;),new Array(&#39;U070206&#39;),false);">ダイレクトトップ</a>
+                    </p>
+                    
+                    <div class="jsModal" data-modal="modal01" style="display: none;">
+                        <div class="boxModalBa">
+                            <h3 class="hdgTy01">
+                                <span>確認</span>
+                            </h3>
+                            <div class="boxBdrTy01 wordBreakAll">
+                                <p>　前日・当日分を除いた形でダウンロードされます。</p>
+<p>　よろしいですか？</p>
+                                <ul class="listBtnBa">
+                                    <li class="btnTy05"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="close">いいえ</a></li>
+                                    <li class="btnTy05 yes"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="execute">はい</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="btnTy02"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#">ページの先頭</a></p>
+
+<div class="boxTelBa">
+<p><img src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAimgTel01.gif" width="234" height="54" alt="ゆうちょダイレクトサポートデスク（通話料無料） 0120-992504"></p>
+<div>
+<dl>
+<dt>平日</dt>
+<dd>8:30～21:00</dd>
+<dt>土／日／休日</dt>
+<dd>9:00～17:00</dd>
+</dl>
+<p>（12月31日～1月3日は、9:00～17:00）<br>
+<span>※携帯電話・PHSからもご利用いただけます。<br>
+※IP電話等一部ご利用いただけない場合があります。</span></p>
+</div>
+</div>
+
+
+    
+    <div class="jsModal" data-modal="HEADER_HOME0" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="jsModal" data-modal="HEADER_HOME1" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+	            
+	            <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="jsModal" data-modal="HEADER_HOME2" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="jsModal" data-modal="HEADER_LOGOUT" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ログアウトしますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="jsModal" data-modal="HEADER_LOGOUT_RIYOUTEISHI" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p><strong>【必ずご確認ください】<br>
+　利用停止の前に、ワンタイムパスワード送付用にご登録いただいている携帯電話・スマートフォンのメールアドレスに誤りがないか、ご確認をお願いいたします。メールが受信できない場合、次回ログインができなくなります。</strong><br>
+　ワンタイムパスワード送付用メールアドレスのご確認は、一度「いいえ」を押し、メニューの「ご登録内容確認・変更」から、ご確認いただけます。<br>
+利用停止が完了後、ご登録いただいているメールアドレスにメールでご連絡いたしますのでご確認ください。<br>
+<br>
+<strong>　以上をご確認のうえ、利用停止してログアウトしてよろしいですか？</strong></p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+    
+
+
+
+
+    
+
+
+
+
+    
+
+
+<div id="strSub">
+    <div id="nav" class="boxMenu">
+        
+        <h2 class="hdgMenuBa">メニュー</h2>
+        <p class="btnTy04">
+            <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="jsModalLink" data-modal="MENU_DIRECTTOP">ダイレクトトップ</a>
+            <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U030101RED.do&#39;,&#39;&#39;,&#39;&#39;,false);" style="display: none;">ダイレクトトップ</a>
+        </p>
+        <ul class="navGlobal">
+            
+                <li><span>セキュリティ</span>
+                    <ul>
+                        <li class="icon10"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U720101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">トークンの設定</a></li>
+                    </ul>
+                </li>
+            
+            <li><span>照会</span>
+                <ul>
+                    <li class="icon01"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U050101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">現在高照会</a></li>
+                    <li class="icon02"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U070101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">入出金明細照会</a></li>
+                    
+                </ul>
+            </li>
+            <li><span>送金</span>
+                <ul>
+                    
+                        
+                        <li class="icon03"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U080101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">振込・振替</a></li>
+                        <li class="icon04"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U100101SCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">税金･各種料金の<br>払込み</a></li>
+                    
+                    
+                </ul>
+            </li>
+            <li><span>貯金</span>
+                <ul>
+                    <li class="icon05"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U110201KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">定額貯金・定期貯金</a></li>
+                    <li class="icon06"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U280101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">ボランティア貯金</a></li>
+                </ul>
+            </li>
+            <li><span>資産運用</span>
+                <ul>
+                    
+                        
+                        <li class="icon07"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U710101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">投資信託</a></li>
+                    
+                    
+                </ul>
+            </li>
+            
+                
+                
+                <li><span>申込</span>
+                    <ul>
+                    
+                        
+                            
+                            <li class="icon08">
+                                <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U650101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);"><img src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAdirectPlusLogo.gif" width="170"><br>(無通帳型総合口座)への切替</a>
+                            </li>
+                        
+                        
+                        <li class="noBoder">
+                            <a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/plus/dr_pc_pl_index.html&#39;, &#39;FA0004&#39;);">
+                                <span class="linkplus">ゆうちょダイレクト＋</span>について
+                            <img src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a>
+                        </li>
+                    
+                    
+                    </ul>
+                </li>
+            
+            <li><span>各種手続等</span>
+                <ul>
+                    
+                        
+                        
+                            
+                            <li class="icon08"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U690101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">メッセージボックスの確認</a></li>
+                        
+                        
+                    
+                    <li class="icon08"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U140101BLC.do&#39;,&#39;&#39;,&#39;&#39;,false);">ご登録内容確認・<br>変更</a></li>
+                    <li class="icon09"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="javascript:return dcRequest(&#39;simpleTransitionForm&#39;,&#39;/tp1web/pc/U250101KCK.do&#39;,&#39;&#39;,&#39;&#39;,false);">ご利用結果確認</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="listMenuBa">
+        <li class="icon01"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/guide/dr_pc_gd_index.html&#39;, &#39;FA0005&#39;);">操作方法<img src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+        <li class="icon02"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="JavaScript:cgfLoadHomepage(&#39;http://direct-faq.jp-bank.japanpost.jp/&#39;, &#39;FA0006&#39;);">よくあるご質問<img src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+        <li class="icon03"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" onclick="JavaScript:cgfLoadHomepage(&#39;http://www.jp-bank.japanpost.jp/direct/pc/contact/dr_pc_ct_index.html&#39;, &#39;FA0007&#39;);">お問い合わせ<img src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAiconBlank01.gif" alt="別窓で開きます。" width="15" height="12" class="icon"></a></li>
+    </ul>
+
+    
+    
+    <div class="jsModal" data-modal="MENU_DIRECTTOP" style="display: none;">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01">
+                <span>確認</span>
+            </h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ダイレクトトップへ移動します。よろしいですか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U070202SCR.do?RedirectToken=40db924ed7c74b4eea8f1b0ffe41fac070add3f8#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /strSub -->
+
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+                
+                
+                <!-- EndMenu('1'); -->
+                
+            
+            
+            
+            
+            
+            
+        
+        
+    
+    
+
+
+
+
+
+    
+
+<div id="footer">
+<p id="footerLogo01"><img src="./ゆうちょダイレクト _ 入出金明細照会_files/DFCAfooterLogo01.gif" width="114" height="25" alt="JP 日本郵政グループ"></p>
+<p id="footerCopy">Copyright &#169; JAPAN POST BANK Co.,Ltd All Rights Reserved.</p>
+</div><!-- /footer -->
+<a href="https://direct1.jp-bank.japanpost.jp/tp1web/pc/U000101ANA.do" id="exlink" style="display:none;"></a>
+        </div>
+        
+    </form>
+<form name="simpleTransitionForm" method="post"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="31b5e76826daf904b8bb0620d17821832a18e7b7"></div><div><input type="hidden" name="event" value=""></div></form><form name="pageLinksBeanPageLinksForm" method="post"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="31b5e76826daf904b8bb0620d17821832a18e7b7"></div><div><input type="hidden" name="startIndex" value="0"></div><div><input type="hidden" name="event" value=""></div></form>
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

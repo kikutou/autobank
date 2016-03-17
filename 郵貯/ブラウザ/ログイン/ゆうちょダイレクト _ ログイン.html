@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja"><head>
+        
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="1 Sep 2000 00:00:00 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+        <title>ゆうちょダイレクト | ログイン</title>
+        <link href="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/dgCAbase.css" rel="stylesheet" type="text/css" media="all">
+        <script src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/jquery.js" type="text/javascript" id="jqueryjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+        <script src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/mjl.js" type="text/javascript" id="mjljs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+        <script src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/run.js" type="text/javascript" id="runjs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+        <script src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/dgbaRequestControllerP01.js" language="JavaScript" type="text/JavaScript" id="dgbaRequestControllerP01js" context-root="https://cache.jp-bank.japanpost.jp"></script><!-- for s-0001 -->
+        <script src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/rsa.js" language="JavaScript" type="text/JavaScript" id="rsajs" context-root="https://cache.jp-bank.japanpost.jp"></script>
+        <script src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/BPjhESJFPl.js" language="JavaScript" type="text/JavaScript" id="BPjhESJFPl"></script><script src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/r.js" type="text/javascript"></script><!-- for s-0001 -->
+        <!--[if (gte IE 6)&(lte IE 8)]>
+            <script src="https://cache.jp-bank.japanpost.jp/pages/pc/etc/js/selectivizr.js" type="text/javascript" id="selectivizrjs" context-root="https://cache.jp-bank.japanpost.jp"></SCRIPT>
+        <![endif]-->
+        <!--[if lt IE 9]>
+            <link href="https://cache.jp-bank.japanpost.jp/pages/pc/etc/css/dgCAIE8filter.css" rel="stylesheet" type="text/css">
+        <![endif]-->
+    </head>
+    
+<body class="layStrTy02">
+
+
+<div id="wrapper">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="header">
+	<p id="headerLogo01">
+	    <a href="#" onclick="JavaScript:cgfLoadHomepage('http://www.jp-bank.japanpost.jp/index.html', 'FA0008');"><img src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/DFCAheaderLogo01.gif" alt="ゆうちょ銀行" height="60" width="291"></a>
+	</p>
+	<p id="headerLinkHome">
+	    
+        
+            
+            <a href="#" onclick="JavaScript:cgfLoadHomepage('http://www.jp-bank.japanpost.jp/direct/pc/contact/dr_pc_ct_index.html', 'FA0002');">お問い合わせ</a>
+        
+        
+            
+            <a href="#" onclick="JavaScript:cgfLoadHomepage('http://www.jp-bank.japanpost.jp/direct/pc/help/dr_pc_hp_index.html', 'FA0003');">ヘルプ</a>
+        
+        
+            
+                
+                <a href="#" class="jsModalLink" data-modal="HEADER_HOME1">ホームへ</a><a style="display: none;" href="#" onclick="JavaScript:location.href='http://www.jp-bank.japanpost.jp/index.html'; return false">ホームへ</a>
+            
+            
+        
+	</p>
+	<p id="headerLogo02">
+	    <a href="#" onclick="JavaScript:cgfLoadHomepage('http://www.jp-bank.japanpost.jp/direct/pc/dr_pc_index.html', 'FA0009');"><img src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/DFCAheaderLogo02.gif" alt="ゆうちょダイレクト" height="59" width="260"></a>
+	</p>
+	<p id="headerLogout" class="btnTy01">
+        
+        
+        
+	</p>
+	</div><!-- /header -->
+
+
+
+
+<div id="structure">
+
+
+<ul class="listLinkBa alignR">
+    <li><a href="#" onclick="javascript:return dcRequest('simpleTransitionForm','https://direct3.jp-bank.japanpost.jp/tp1web/sp/U010101SCK.do',new Array('event'),new Array('U010105'),false);">スマートフォンをご利用の方はこちら</a></li>
+</ul>
+
+
+<!-- SC_GWU01_01-I001 -->
+<div class="boxBa">
+<ul class="listLinkBa">【お知らせ】
+    <li><a title="別ウインドウを開きます。" onclick="JavaScript:cgfLoadHomepage('http://direct-faq.jp-bank.japanpost.jp/faq/show/336','SC_GWU01_01-I001.html');return false" href="#">受信できないメールアドレスを登録している方はこちら<img src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/DFCAiconBlank01.gif" alt="別窓で開きます。" class="icon" height="12" width="15"></a></li>
+</ul>
+</div>
+<!-- /SC_GWU01_01-I001 -->
+
+<div id="strMain">
+
+
+<h1 class="hdgL1Ba"><span>ログイン（お客さま番号入力）</span></h1>
+
+
+
+
+
+
+
+<form name="submitData" method="post" autocomplete="off" onsubmit="javascript:return false;"><div><input name="org.apache.struts.taglib.html.TOKEN" value="2436f853fc589c6f0699ca937ec8740de8321ba1" type="hidden"></div><div><input name="event" value="" type="hidden"></div>
+<div class="boxBa req">
+<p><strong class="txtLeadBa"><label for="form01">お客さま番号</label></strong><span class="icon">必須</span></p>
+
+
+<!-- SC_GWU01_01-I003 -->
+<div class="layColumn col2 adjust">
+<div class="col w60">
+<p>以下の欄に、お客さま番号を入力し、「次へ」を押してください。<br>
+お客さま番号は、<strong class="txtLeadBa">００００－００００－０００００</strong>のように４桁－４桁－５桁で入力してください。</p>
+<ul class="listNoticeBa">
+    <li class="single"><span>※</span>口座の記号・番号ではありません。</li>
+</ul>
+</div>
+<div class="col w40"><img alt="" style="width: 258px; height: 173px" src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/riyousyacard2.png"></div>
+</div>
+<!-- /SC_GWU01_01-I003 -->
+
+<p class="alignC"><input name="okyakusamaBangou1" maxlength="4" tabindex="11" id="focus1" class="w15" type="text">-&nbsp;<input name="okyakusamaBangou2" maxlength="4" tabindex="12" id="focus2" class="w15" type="text">-&nbsp;<input name="okyakusamaBangou3" maxlength="5" tabindex="13" id="focus3" class="w15" type="text"></p>
+
+
+<!-- SC_GWU01_01-I004 -->
+<ul class="listLinkBa">
+    <li><a title="別ウインドウを開きます。" onclick="JavaScript:cgfLoadHomepage('http://www.jp-bank.japanpost.jp/direct/pc/faq/dr_pc_qa_procedure.html','SC_GWU01_01-I004.html');return false" href="#">ログインできない場合はこちら<img src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/DFCAiconBlank01.gif" alt="別窓で開きます。" class="icon" height="12" width="15"></a></li>
+</ul>
+<p align="center"><a title="別ウインドウを開きます。" onclick="JavaScript:cgfLoadHomepage('http://direct-faq.jp-bank.japanpost.jp','SC_GWU01_01-I004.html');return false" href="#"><img id="btn_menu_faq" name="btn_menu_faq" alt="よくあるご質問" src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/btn_menu_faq3.png" height="39" width="433" border="0"></a></p>
+<!-- /SC_GWU01_01-I004 -->
+
+
+
+    
+	<ul class="listBtnTy01">
+		
+		
+		<li class="btnBa back"><input value="ホームへ" name="U010101" onclick="JavaScript:location.href='http://www.jp-bank.japanpost.jp/index.html'; return false" tabindex="15" type="button"></li>
+		<li class="btnBa"><input name="U010103" tabindex="14" value="次へ" onclick="javascript:post_deviceprint(); return dcRequest('submitData','https://direct3.jp-bank.japanpost.jp/tp1web/pc/U010701BLC.do',new Array('event'),new Array('U010103'),false);" type="button"></li>
+	</ul>
+
+
+</div>
+<input name="pm_fp" value="" type="hidden">
+</form>
+
+
+<!-- SC_GWU01_01-I005 -->
+<div class="boxTy01">
+<h4 class="hdgL5Ba"><span>利用上のご注意事項</span></h4>
+<ul class="listBa">
+    <li>ご利用には事前にお申し込みが必要です。</li>
+</ul>
+<ul class="listLinkBa">
+    <li><a title="別ウインドウを開きます。" onclick="JavaScript:cgfLoadHomepage('http://www.jp-bank.japanpost.jp/direct/pc/sinki/dr_pc_sk_index.html','SC_GWU01_01-I005.html');return false" href="#">新規登録のご案内<img src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/DFCAiconBlank01.gif" alt="別窓で開きます。" class="icon" height="12" width="15"></a></li>
+</ul>
+<ul class="listBa">
+    <li><a title="別ウインドウを開きます。" onclick="JavaScript:cgfLoadHomepage('http://www.jp-bank.japanpost.jp/news/2007/news_id000187.html','SC_GWU01_01-I005.html');return false" href="#">暗証番号のお取り扱いにご注意ください。<img src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/DFCAiconBlank01.gif" alt="別窓で開きます。" class="icon" height="12" width="15"></a></li>
+    <li>ブラウザの「戻る」「進む」ボタンは使用しないでください。</li>
+    <li>ゆうちょダイレクトの画面上のボタンで操作してください。</li>
+    <li>不特定多数の方が利用される場所でのご利用は、第三者に盗取等をされる可能性がありますので、できる限りお控えください。</li>
+    <li>お取引中は、お気に入り（ブックマーク）等で他のページに移動しないでください。</li>
+    <li>ブラウザの設定でJavaScript、およびCookieを有効にしておいてください。 <br>
+    （標準では有効になっています）</li>
+</ul>
+</div>
+<!-- /SC_GWU01_01-I005 -->
+
+
+
+
+
+<!-- SC_GWU01_01-I007 -->
+<p><strong>【おかけ間違いにご注意ください】<br>
+ゆうちょダイレクトサポートデスク（0120-992-504）へご連絡の際に、電話番号のおかけ間違いにより、一般の方へご迷惑をおかけする事象が発生しております。電話番号をよくお確かめのうえ、おかけ間違いのないようお願い申し上げます。</strong></p>
+<!-- /SC_GWU01_01-I007 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="btnTy02"><a href="#">ページの先頭</a></p>
+
+<div class="boxTelBa">
+<p><img src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/DFCAimgTel01.gif" alt="ゆうちょダイレクトサポートデスク（通話料無料） 0120-992504" height="54" width="234"></p>
+<div>
+<dl>
+<dt>平日</dt>
+<dd>8:30～21:00</dd>
+<dt>土／日／休日</dt>
+<dd>9:00～17:00</dd>
+</dl>
+<p>（12月31日～1月3日は、9:00～17:00）<br>
+<span>※携帯電話・PHSからもご利用いただけます。<br>
+※IP電話等一部ご利用いただけない場合があります。</span></p>
+</div>
+</div>
+
+
+    
+    <div style="display: none;" class="jsModal" data-modal="HEADER_HOME0">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div style="display: none;" class="jsModal" data-modal="HEADER_HOME1">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+	            
+	            <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div style="display: none;" class="jsModal" data-modal="HEADER_HOME2">
+        <div class="boxModalBa">
+            <h3 class="hdgTy01"><span>確認</span></h3>
+            <div class="boxBdrTy01">
+                
+                <p>　ゆうちょ銀行Webサイトへ戻りますか？</p>
+                <ul class="listBtnBa">
+                    <li class="btnTy05"><a href="#" class="close">いいえ</a></li>
+                    <li class="btnTy05 yes"><a href="#" class="execute">はい</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div><!-- /strMain -->
+
+<div id="strSub">
+	<div class="boxHdgTy01">
+		<h3 class="hdgL3Ba"><span>ご利用可能時間</span></h3>
+		
+		<!-- SC_GWU01_01-I008 -->
+<p>0時5分から23時55分まで<br>
+&nbsp;</p>
+<ul class="listNoticeBa">
+    <li class="single"><span>※</span>システムメンテナンスにより休止することがあります。</li>
+</ul>
+<ul class="listLinkBa">
+    <li><a title="別ウインドウを開きます。" onclick="JavaScript:cgfLoadHomepage('http://www.jp-bank.japanpost.jp/direct/pc/drnews/2007/drnews_id000004.html','SC_GWU01_01-I008.html');return false" href="#">休止予定はこちら<img src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/DFCAiconBlank01.gif" alt="別窓で開きます。" class="icon" height="12" width="15"></a></li>
+</ul>
+<p>&nbsp;</p>
+<!-- /SC_GWU01_01-I008 -->
+    </div>
+</div><!-- /strSub -->
+</div><!-- /structure -->
+
+<script language="JavaScript" type="text/javascript" src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/aes.js"></script>
+<script language="JavaScript" type="text/javascript" src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/load.js"></script>
+<script language="JavaScript" type="text/javascript" src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/dl.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- EndMenu('0'); -->
+    
+
+
+
+
+<div id="footer">
+<p id="footerLogo01"><img src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/DFCAfooterLogo01.gif" alt="JP 日本郵政グループ" height="25" width="114"></p>
+<p id="footerCopy">Copyright &#169; JAPAN POST BANK Co.,Ltd All Rights Reserved.</p>
+</div><!-- /footer -->
+<a href="https://direct.jp-bank.japanpost.jp/tp1web/pc/U000101ANA.do" id="exlink" style="display:none;"></a>
+
+</div><!-- /wrapper -->
+<script language="JavaScript" type="text/javascript" src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/dgCApwc.js"></script><div style="position: absolute;"><script src="%E3%82%86%E3%81%86%E3%81%A1%E3%82%87%E3%83%80%E3%82%A4%E3%83%AC%E3%82%AF%E3%83%88%20%7C%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3_files/chrome.js"></script></div>
+<form name="simpleTransitionForm" method="post"><div><input name="org.apache.struts.taglib.html.TOKEN" value="2436f853fc589c6f0699ca937ec8740de8321ba1" type="hidden"></div><div><input name="event" value="" type="hidden"></div></form>
+</body></html>

@@ -30,4 +30,4 @@ def FSMonitor(path='/var/log'):
             break
 
 if __name__ == "__main__":
-    FSMonitor(path='/home/kiku/デスクトップ')
+    FSMonitor(path='/home/kiku/.thunderbird/kx3gfqlm.default/ImapMail/mail.mamol.co.jp/filterlog.html')

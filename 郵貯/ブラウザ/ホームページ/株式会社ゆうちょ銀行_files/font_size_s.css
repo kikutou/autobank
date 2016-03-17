@@ -1,0 +1,22 @@
+body.b_font_size {
+	font-size: 11px;
+}
+#header #h_font_size dd a#h_font_size_s {
+	color: #ffffff;
+	background-color: #757575;
+	border-top: #757575 1px solid;
+	border-bottom: #757575 1px solid;
+	border-left: #757575 1px solid;
+}
+#header #h_font_size dd a#h_font_size_m {
+	color: #333333;
+	background-color: #ffffff;
+	border: #dcdcdc 1px solid;
+}
+#header #h_font_size dd a#h_font_size_l {
+	color: #333333;
+	background-color: #ffffff;
+	border-top: #dcdcdc 1px solid;
+	border-right: #dcdcdc 1px solid;
+	border-bottom: #dcdcdc 1px solid;
+}

@@ -3,7 +3,9 @@
 #CreateDate : 2016-03-17
 import re
 import time
-import mailDbController
+
+from AutoBrowser import mailDbController
+
 
 def checkEmail(path = '/home/kiku/.thunderbird/kx3gfqlm.default/ImapMail/mail.mamol.co.jp/INBOX.sbd/&UWWR0Xi6io0-'):
 
@@ -54,7 +56,7 @@ def checkEmail(path = '/home/kiku/.thunderbird/kx3gfqlm.default/ImapMail/mail.ma
                         sentMan = line.split('From: =?UTF-8?B?6Z6g6aiw?= ')[1].strip()[1:-1]
 
                         #DBの処理をいれましょう
-                        mailDbController.createNewMailInfo(messageId,dateTime,0)
+                        mailDbController.createNewMailInfo(messageId, dateTime, 0)
 
 
                     else:
